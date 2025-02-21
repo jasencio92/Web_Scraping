@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ODCSF</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Main -->
+				<div id="main">
+					<div class="inner">
+						<!-- Banner -->
+							<section id="banner">
+								<div class="content">
+									<header>
+										<h2>Obten los datos de tu Constancia de Situación Fiscal</h2>
+									</header>
+									<p>
+										<h4>Herramienta diseñada para subir tu Constancia de Situación Fiscal en formato .PDF, y leer los datos que ella contiene.</h4>
+									</p>
+									<div class="box">
+										<form action="{{url_for('crear_img')}}" method="POST" autocomplete="off" enctype="multipart/form-data" id="form-carga">
+											<div class="col">
+												<section class="col">
+													<label class="label">Seleccione el archivo</label>
+													<div class="input input-file" id="state-file">
+														<span class="button">
+															<input type="file" accept=".pdf"
+																onchange="javascript:this.parentNode.nextSibling.value = this.value"
+																name="archivo" id="input-archivo">
+															Examinar
+														</span>
+													</div>
+												</section>
+											</div>
+											<div class="row gtr-uniform">
+												<ul class="actions">
+													<li>
+														<button type="submit" class="button icon solid fa-download"> enviar </button>
+													</li>
+												</ul>
+											</div>
+										</form>
+									</div>
+												<!-- <a style="left: 2em;" href="#" id="btn-submit" class="button icon solid fa-download">
+													Obtener datos
+												</a> -->
+								</div>
+							</section>
+						</section>
+					</div>
+				</div>
+		</div>
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+	</body>
+</html>
+<script src="../static/js/constancia_fiscal/index.js?v1.0"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

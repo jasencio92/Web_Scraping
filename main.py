@@ -23,7 +23,7 @@ def cortar_imagen():
 def crear_img():
    import pypdfium2 as pdfium
    #Aqui se captura el archivo PDF, para darle el tratamiento.
-   pdf = pdfium.PdfDocument("sat_ale.pdf")
+   pdf = pdfium.PdfDocument("documento_sat.pdf")
    n_pages = len(pdf)
    if n_pages:
       page = pdf.get_page(0)
